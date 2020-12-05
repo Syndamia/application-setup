@@ -9,7 +9,7 @@ cd /tmp
 
 # Preparation ------------------------------------------------------------------
 
-sudo dnf remove -y gnote xviewer hexchat thunderbird transmission-common transmission-gtk rhythmbox pidgin xawtv
+sudo dnf remove -y gnote xviewer hexchat thunderbird transmission-common transmission-gtk rhythmbox pidgin xawtv dnfdragora-updater
 
 sudo dnf upgrade -y
 
