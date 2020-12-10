@@ -15,7 +15,7 @@ sudo dnf upgrade -y
 
 # Installation -----------------------------------------------------------------
 
-essential="terminator git copyq audacious gimp samba adb flameshot curl tlp piper gstreamer1-plugin-openh264"
+essential="terminator git copyq audacious gimp samba adb flameshot curl tlp piper gstreamer1-plugin-openh264 dnf-utils"
 utilities="barrier cheese htop cloc neofetch"
 qemukvm="qemu-kvm bridge-utils virt-manager ebtables iptables dnsmasq"
 fun="cmatrix"
