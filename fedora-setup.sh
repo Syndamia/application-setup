@@ -63,7 +63,7 @@ sudo dnf copr enable zeno/scrcpy -y && sudo dnf -y install scrcpy
 # Gestures
 sudo gpasswd -a $USER input && sudo dnf install -y xdotool wmctrl && cd /tmp && git clone https://github.com/bulletmark/libinput-gestures.git && cd libinput-gestures/ && sudo make install && libinput-gestures-setup autostart && libinput-gestures-setup start
 
-# Teamviewer (commented out, because the most recent version causes problems)
+# Teamviewer
 sudo dnf install -y "https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm"
 
 # Nextcloud desktop
