@@ -44,7 +44,7 @@ wget -O discord.tar.gz "https://discord.com/api/download?platform=linux&format=t
 # Browsers ---------------------------------------------------------------------
 
 # Min
-wget -O min.rpm "https://github.com/minbrowser/min/releases/download/v1.17.1/min-1.17.1-1.x86_64.rpm" && sudo dnf install -y ./min.rpm
+sudo dnf install -y "https://github.com/minbrowser/min/releases/download/v1.17.3/min-1.17.3-1.x86_64.rpm"
 
 # Brave
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/ && sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc && sudo dnf install -y brave-browser
@@ -64,7 +64,7 @@ sudo dnf copr enable zeno/scrcpy -y && sudo dnf -y install scrcpy
 sudo gpasswd -a $USER input && sudo dnf install -y xdotool wmctrl && cd /tmp && git clone https://github.com/bulletmark/libinput-gestures.git && cd libinput-gestures/ && sudo make install && libinput-gestures-setup autostart && libinput-gestures-setup start
 
 # Teamviewer (commented out, because the most recent version causes problems)
-# wget -O teamviewer.rpm "https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm" && sudo dnf install -y ./teamviewer.rpm
+sudo dnf install -y "https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm"
 
 # Nextcloud desktop
 wget -O nextcloud-desktop.AppImage "https://github.com/nextcloud/desktop/releases/download/v3.0.3/Nextcloud-3.0.3-x86_64.AppImage" && sudo mv nextcloud-desktop.AppImage /opt && sudo chmod +x /opt/nextcloud-desktop.AppImage
